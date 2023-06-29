@@ -13,7 +13,7 @@ const Work = ({ experiences }) => {
         Work Experience
       </h2>
       <div className="mt-5">
-      {experiences.experiences.map((experience) => (
+      {/* {experiences.experiences.map((experience) => (
         <div key={experience._id}>
           <WorkCard
             role={experience.role}
@@ -26,7 +26,7 @@ const Work = ({ experiences }) => {
           />
         </div>
           
-        ))}
+        ))} */}
 
       </div>
       <div className="h-16"></div>
