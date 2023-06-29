@@ -4,6 +4,7 @@ import {
 } from "@heroicons/react/24/outline";
 import React from "react";
 import WorkCard from "./WorkCard";
+import { BsCheckLg } from "react-icons/bs";
 
 const Work = ({ experiences }) => {
   return (
@@ -12,30 +13,21 @@ const Work = ({ experiences }) => {
         Work Experience
       </h2>
       <div className="mt-5">
-        {experiences.experiences.map(
-          ({
-            _id,
-            role,
-            company,
-            start_date,
-            end_date,
-            description,
-            intern,
-          }) => {
-            return (
-              <WorkCard
-                key={_id}
-                role={role}
-                company={company}
-                intern={intern}
-                start_date={start_date}
-                end_date={end_date}
-                end={end_date}
-                description={description}
-              />
-            );
-          }
-        )}
+      {experiences.experiences.map((experience) => (
+        <div key={experience._id}>
+          <WorkCard
+            role={experience.role}
+            company={experience.company}
+            intern={experience.intern}
+            start_date={experience.start_date}
+            end_date={experience.end_date}
+            end={experience.end_date}
+            description={experience.description}
+          />
+        </div>
+          
+        ))}
+
       </div>
       <div className="h-16"></div>
     </div>
