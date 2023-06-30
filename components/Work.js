@@ -13,8 +13,8 @@ const Work = ({ experiences }) => {
         Work Experience
       </h2>
       <div className="mt-5">
-      {/* {experiences.experiences.map((experience) => (
-        <div key={experience._id}>
+      {experiences.experiences.map((experience,index) => (
+        <div key={index}>
           <WorkCard
             role={experience.role}
             company={experience.company}
@@ -26,7 +26,7 @@ const Work = ({ experiences }) => {
           />
         </div>
           
-        ))} */}
+        ))}
 
       </div>
       <div className="h-16"></div>

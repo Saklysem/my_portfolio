@@ -30,21 +30,6 @@ const index = ({ projects, event, profile, repos }) => {
             <h1 className="text-2xl text-left font-bold  underline-offset-[13px] decoration-gray-500 underline tracking-widest decoration-dashed ">
               {open ? " " : "My Project "}
             </h1>
-            {open ? (
-              <div className="duration-700 flex">
-                <ArrowsPointingInIcon
-                  onClick={() => setOpen(false)}
-                  className="w-5 h-5 text-white cursor-pointer "
-                />
-              </div>
-            ) : (
-              <div>
-                <ArrowsPointingOutIcon
-                  onClick={() => setOpen(true)}
-                  className="w-5 h-5 text-white cursor-pointer"
-                />
-              </div>
-            )}
           </div>
           <div className="w-fit h-2 bg-blue-500 " />
           <div className="mt-10">
