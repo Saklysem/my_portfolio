@@ -22,7 +22,7 @@ const Home = ({ personalInfo, experiences, event }) => {
         <NavBar />
         <Profile personalInfo={personalInfo} />
         <BtnProject />
-        <Work experiences={experiences} />
+        {/* <Work experiences={experiences} /> */}
       </main>
       <Footer />
     </div>
