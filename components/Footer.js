@@ -6,6 +6,7 @@ const Footer = () => {
       <p className="text-xs">
         Copyright © 2022 LYSEM SAK!
       </p>{" "}
+      <p className="text-xs text-center mt-1">Build on <a href="https://github.com/menglycheng/portfolio-v3">MenglyCheng</a></p>
     </div>
   );
 };
